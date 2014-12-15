@@ -65,4 +65,4 @@ namespace :deploy do
 
 end
 
-after "deploy:publishing", "deploy:operation"
+# after "deploy:publishing", "deploy:operation"
