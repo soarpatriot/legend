@@ -40,6 +40,11 @@ configure :development do
    activate :livereload
 end
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = 'localhost'
+  deploy.path   = '/home/soar/legen'
+end
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
